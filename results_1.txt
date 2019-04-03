@@ -1,0 +1,42 @@
+
+##### sl+ classic_sl -> prop false all false c2 false  ######
+------ PARAMS -----
+N GEN: 400 N POP: 50 N OFF: 25
+TOUR SIZE:4 MIN C VALUE: 1 MAX C VALUE: 50
+P MUT NL: 0.4 P MUT PTL: 0.02 P MUT SL: 0.01 P MUT C: 0.1 P CROSS: 1
+C PROPORTIONAL: False C2 ON: False C1 ALL: False
+TEMP INCREASE: TemperatureProfile.LINEAR TEMP DECREASE: TemperatureProfile.LINEAR
+PROFILE: SearchProfile.SL SEARCH: LocalSearch.NONE
+MUTATION: Mutation.SWAP INIT: Initialisation.CLASSIC_SL
+MAX ATTEMPTS: 10 MAX STEPS: 3 MAX JUMP: 5
+MAX DEPTH: 15 MAX NEIGHBOURS: 15
+-------------------- 
+Score: -2545.374854486939 violations, C1: 32.43333333333333 C2: 0.0
+avg violations, C1: 3.139183262740508 C2: 0.0
+distance time: 912.0391526339457 processing time: 308.00000000000006 wait time: 5.000000000000001 penalty time: 688.1666666666667 delay time: 632.1690351863269
+N eval: 100451.99999999996
+avg c1 weights: 23.62031522898157 avg c1 violated weights: 20.967125334835174
+avg c2 weights: 0.0 avg c2 violated weights: 0
+success rate: 0.03333333333333333
+-------------------- 
+
+##### fixed+ greedy_sl -> prop false all false c2 false  ######
+------ PARAMS -----
+N GEN: 400 N POP: 50 N OFF: 25
+TOUR SIZE:4 MIN C VALUE: 1 MAX C VALUE: 50
+P MUT NL: 0.4 P MUT PTL: 0.02 P MUT SL: 0.01 P MUT C: 0.1 P CROSS: 1
+C PROPORTIONAL: False C2 ON: False C1 ALL: False
+TEMP INCREASE: TemperatureProfile.LINEAR TEMP DECREASE: TemperatureProfile.LINEAR
+PROFILE: SearchProfile.FIXED SEARCH: LocalSearch.NONE
+MUTATION: Mutation.SWAP INIT: Initialisation.GREEDY_TOT
+MAX ATTEMPTS: 10 MAX STEPS: 3 MAX JUMP: 5
+MAX DEPTH: 15 MAX NEIGHBOURS: 15
+-------------------- 
+Score: -3230.6537153717895 violations, C1: 5.6 C2: 0.0
+avg violations, C1: 0.5226304489256114 C2: 0.0
+distance time: 1510.6156970816235 processing time: 495.13333333333316 wait time: 11.999999999999998 penalty time: 109.69999999999999 delay time: 1103.2046849568333
+N eval: 100451.99999999996
+avg c1 weights: 25.148448142366025 avg c1 violated weights: 13.195771781648224
+avg c2 weights: 0.0 avg c2 violated weights: 0
+success rate: 0.39999999999999997
+-------------------- 
